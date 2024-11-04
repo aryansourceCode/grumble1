@@ -1,29 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Macondo&display=swap');
-*{
-    margin:0;
-    padding:0;
+* {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-body{
+body {
     font-family: "Macondo", cursive;
-  font-weight: 800;
-  font-style: normal;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: blanchedalmond;
+    font-weight: 800;
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: blanchedalmond;
 }
-.title{
+.title {
     margin: 20px 0px;
 }
-.main{
-    border:8px solid black;
+.main {
+    border: 8px solid black;
     border-radius: 24px;
     overflow: hidden;
 }
-.name{
+.name {
     display: flex;
     font-size: 32px;
     font-weight: 70px;
@@ -31,20 +31,20 @@ body{
     color: rgb(116, 42, 165);
     background-color: blanchedalmond;
 }
-.name>span{
+.name > span {
     color: black;
 }
-.name-input{
+.name-input {
     font-size: 24px;
     font-weight: 700;
     color: brown;
     flex-grow: 1;
-    border:none;
+    border: none;
     outline: none;
     background-color: blanchedalmond;
     margin: 0px 12px;
 }
-.message-container{
+.message-container {
     display: flex;
     flex-direction: column;
     background-color: white;
@@ -53,59 +53,59 @@ body{
     overflow-y: scroll;
     overflow-x: hidden;
 }
-
-.message-left,.message-right{
+.message-left, .message-right {
     list-style: none;
-    padding: 100px,180px;
+    padding: 100px, 180px;
     margin: 12px;
     max-width: 250px;
     font-size: 20px;
     word-wrap: break-word;
-    overflow-wrap: break-word; 
-    text-align: center
+    overflow-wrap: break-word;
+    text-align: center;
 }
-.message-left{
-    border-radius:20px 20px 20px 0px;
+.message-left {
+    border-radius: 20px 20px 20px 0px;
     align-self: flex-start;
     background-color: lavender;
     box-shadow: -2px 2px 4px black;
 }
-.message-right{
-    border-radius:20px 20px 0px 20px;
+.message-right {
+    border-radius: 20px 20px 0px 20px;
     align-self: flex-end;
     background-color: lawngreen;
     box-shadow: -2px 2px 4px black;
 }
-.message-left>p>span,.message-right>p>span{
+.message-left > p > span, .message-right > p > span {
     display: block;
     font-size: 10px;
     font-style: italic;
     text-align: right;
     margin: 5px;
-    word-wrap: break-word; 
+    word-wrap: break-word;
     overflow-wrap: break-word;
 }
-.feedback{
+.feedback {
     font-style: italic;
     font-size: 14px;
     text-align: center;
     padding: 0px 15px 15px 15px;
 }
-.send-message{
+.send-message {
     display: flex;
     justify-content: space-between;
     width: 400px;
+    margin-top: 10px;
 }
-.message-input{
+.message-input {
     flex-grow: 1;
     height: 48px;
     font-size: 16px;
     border: none;
-    outline:none;
+    outline: none;
     padding: 0px 12px;
-    background-color:beige;
+    background-color: beige;
 }
-.send-button{
+.send-button, .speech-button {
     height: 48px;
     font-size: 16px;
     border: none;
@@ -113,7 +113,14 @@ body{
     outline: none;
     background-color: brown;
     color: whitesmoke;
+    margin-left: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
-.client-total{
+.send-button:hover, .speech-button:hover {
+    background-color: darkred;
+}
+.client-total {
     margin: 20px 0px;
 }
