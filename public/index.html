@@ -6,7 +6,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
-
 </head>
 <body>
     <h1 class="title">Grumble</h1>
@@ -23,20 +22,18 @@
                 <p class="message"><span></span></p>
             </li>
             <li class="message-feedback">
-                <p class="feedback" id="feedback">
-                    
-                </p>
-       </li>
+                <p class="feedback" id="feedback"></p>
+            </li>
         </ul>
         <form class="send-message" id="send-message">
             <input type="text" name="message" id="message-input" class="message-input">
             <div class="v-divider"></div>
             <button type="submit" class="send-button">send<span><i class="fa fa-paper-plane" aria-hidden="true"></i></span></button>
+            <button type="button" id="start-button" class="speech-button"><i class="fas fa-microphone"></i></button>
         </form>
-        </div>
-        <h3 class="clienttotal" id="clienttotal">Total clients are:2</h3>
-        <script src="/socket.io/socket.io.js"></script>
-
-        <script src="main.js"></script>
+    </div>
+    <h3 class="client-total" id="clienttotal">Total clients are: 2</h3>
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
